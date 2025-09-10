@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fayaz Travels - Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe066;
+      margin: 0;
+      padding: 0;
+      align-items: center;display: flex;               
+      flex-direction: column;
+    }
+
+    .nav {
+      width: 100%;
+      padding: 15px;
+      background-color: #ff6600;
+    }
+
+    .nav button {
+      padding: 8px 12px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav button:hover {
+      background-color: #ffcc66;
+    }
+
+    h1 {
+      margin: 20px 0;
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff6600;
+      outline: none;
+    }
+
+    button.submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button.submit-btn:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <button onclick="location.href='home01.html'">Home</button>
+  </div>
+
+  <h1>Fayaz Travels Form</h1>
+
+  <form action="thankyou01.html" method="get">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input id="age" type="number" placeholder="Enter your mom" min="1" max="120" required>
+    </div>
+    <div>
+      <label for="phoneno">Phone</label>
+      <input id="phoneno" type="number" placeholder="Enter your mommy's phone number" pattern="[0-9]{10,15}" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label for="add">Address</label>
+      <textarea id="add" placeholder="Enter your address" required></textarea>
+    </div>
+    <div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
